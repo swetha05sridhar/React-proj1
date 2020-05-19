@@ -5,17 +5,21 @@ import Home from './Home/Home';
 //import Slider from './Slider/Slider';
 //import MultipleSlider from './MultipleSlider/MultipleSlider';
 import Navigation from './Components/Navigation/Navigation';
-import TopicsList from './Components/TopicsList/TopicsList';
-import Footer from './Components/Footer/Footer'
+import Welcome from './Components/Welcome/Welcome'
+//import TopicsList from './Components/TopicsList/TopicsList';
+import Footer from './Components/Footer/Footer';
+import HomeContent from './Components/HomeContent/HomeContent'
 
 function App() {
   return (
     <div className="App">
-      {/* <Home />*/}
+     
       {/* <Slider />*/} 
      {/*<MultipleSlider /> */} 
      <Navigation />
-     <TopicsList />
+     <Welcome />
+     <HomeContent />
+     {/*<TopicsList />*/}
      <Footer />
     </div>
   );

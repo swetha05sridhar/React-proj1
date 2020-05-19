@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import './Navigation.css'
+
 
 class Navigation extends Component{
     render(){
         return(
-            <div className="navbar">
+            <Router>
+                  <div className="navbar">
+                
                 <ul className="nav-items">
-                    <li>
+                    <li className="nav-eachItem">
                     <a href="/" className="nav-eachItem">
                        home 
                     </a>
@@ -27,7 +31,10 @@ class Navigation extends Component{
                     </a>
                     </li>
                 </ul>
-            </div>
+                
+            </div>  
+            </Router>
+            
         );
     }
 
